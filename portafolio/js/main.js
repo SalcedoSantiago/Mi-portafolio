@@ -113,6 +113,13 @@ function enviarFormulario(datos){
                     contenedor.appendChild(resultado);
                 });
             }
+        }else{
+            Swal.fire({
+                title: 'Error!',
+                text: 'Error 404',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            })
         }
     }
     xhr.send(datos)
